@@ -1,2 +1,5 @@
+## Ignore files
 nvim/lua/waario/config/amz-lsp.lua
 nvim/lazy-lock.json
+
+
