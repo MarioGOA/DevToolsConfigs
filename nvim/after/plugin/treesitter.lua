@@ -1,0 +1,16 @@
+require'nvim-treesitter'.install { 
+	'java',
+	'bash',
+	'zsh',
+	'c',
+	'cpp',
+	'diff',
+	'go',
+	'json',
+	'python',
+	'ruby',
+	'scala',
+	'csv',
+	'rust', 
+	'javascript', 
+	'lua' }
