@@ -22,6 +22,7 @@ end
 vim.keymap.set("n", "<leader>a", function() harpoon:list():add() end)
 vim.keymap.set("n", "<leader>h", function() toggle_telescope(harpoon:list()) end,
     { desc = "Open harpoon window" })
+vim.keymap.set("n", "<leader>rh", function() harpoon:list():remove() end)
 
 -- Toggle previous & next buffers stored within Harpoon list
 vim.keymap.set("n", "<C-S-P>", function() harpoon:list():prev() end)
