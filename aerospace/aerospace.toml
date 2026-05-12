@@ -202,6 +202,14 @@ automatically-unhide-macos-hidden-apps = false
     run = 'move-node-to-workspace 1'
 
 [[on-window-detected]]
+    if.app-name-regex-substring = 'zoom'
+    run = 'move-node-to-workspace 1'
+
+[[on-window-detected]]
+    if.app-id = 'com.cisco.secureclient.gui'
+    run = ['layout floating', 'move-node-to-workspace 1']
+
+[[on-window-detected]]
     if.app-id = 'org.mozilla.firefox'
     run = 'move-node-to-workspace 2'
 
@@ -215,17 +223,10 @@ automatically-unhide-macos-hidden-apps = false
 
 [[on-window-detected]]
     if.app-id = 'md.obsidian'
-    run = 'move-node-to-workspace 7'
-
-[[on-window-detected]]
-    if.app-id = 'com.googlecode.iterm2'
     run = 'move-node-to-workspace 8'
 
 [[on-window-detected]]
-    if.app-id = 'us.zoom.xos'
+    if.app-id = 'com.googlecode.iterm2'
     run = 'move-node-to-workspace 9'
 
-[[on-window-detected]]
-    if.app-id = 'com.cisco.secureclient.gui'
-    run = ['layout floating', 'move-node-to-workspace 1']
 

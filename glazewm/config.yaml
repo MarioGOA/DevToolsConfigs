@@ -148,11 +148,11 @@ window_rules:
 
   - commands: ["move --workspace 7"]
     match:
-      - window_process: { regex: "[Oo]bsidian" }
+      - window_process: { regex: "LaunchBox" }
 
   - commands: ["move --workspace 8"]
     match:
-      - window_process: { regex: "LaunchBox" }
+      - window_process: { regex: "[Oo]bsidian" }
 
   - commands: ["move --workspace 9"]
     match:

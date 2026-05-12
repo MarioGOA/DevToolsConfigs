@@ -13,11 +13,13 @@ return {
 			{ 'nvim-telescope/telescope-fzf-native.nvim', build = 'make' },
 		}
 	},
-	{
-		'nvim-treesitter/nvim-treesitter',
-		lazy = false,
-		build = ':TSUpdate'
-	},
+    {
+        'nvim-treesitter/nvim-treesitter',
+        -- Update when language support is improved
+        branch = 'master', -- Branch main is a complete re-work
+        lazy = false,
+        build = ':TSUpdate'
+    },
 	{
 		'mbbill/undotree',
 		lazy = false
