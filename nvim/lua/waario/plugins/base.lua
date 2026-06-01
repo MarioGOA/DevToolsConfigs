@@ -50,4 +50,8 @@ return {
         event = "InsertEnter",
         config = true
     },
+    {
+        'sindrets/diffview.nvim',
+        lazy = false
+    },
 }
