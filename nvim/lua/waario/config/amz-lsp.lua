@@ -16,7 +16,7 @@ function initializeBemol()
         return
     end
 
-    local root_dir = vim.fs.root(0, {'packageInfo', 'Config', '.git'})
+    local root_dir = vim.fs.root(0, {'packageInfo', 'Config'})
 
     if root_dir and vim.fn.isdirectory(root_dir .. "/.bemol") == 0 then
         print("Bemol folder not found - running command")
