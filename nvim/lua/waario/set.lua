@@ -23,3 +23,21 @@ vim.opt.isfname:append("@-@")
 vim.opt.updatetime = 50
 
 vim.opt.colorcolumn = "120"
+
+-- Remote Config -- 
+-- For remote SSH sessions, use OSC 52 for yanking text
+if vim.env.SSH_TTY then
+  vim.g.clipboard = {
+    name = 'OSC 52',
+    copy = {
+      ['+'] = require('vim.ui.clipboard.osc52').copy('+'),
+      ['*'] = require('vim.ui.clipboard.osc52').copy('*'),
+    },
+    -- Keep paste nil to prevent the remote machine from freezing/hanging
+    paste = {
+      ['+'] = function() return vim.fn.getreg('+') end,
+      ['*'] = function() return vim.fn.getreg('*') end,
+    },
+  }
+end
+

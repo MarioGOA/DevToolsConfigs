@@ -41,3 +41,7 @@ vim.keymap.set({"n", "v"}, "<leader>pf", ":NvimTreeToggle<CR>")
 
 -- LSP Remaps --
 vim.keymap.set({"n", "v"}, "<leader>fm", vim.lsp.buf.format, { desc = 'Format buffer'})
+
+-- Opend Diff Git
+vim.keymap.set({"n", "v"}, "<leader>gr", ":DiffviewOpen<CR>")
+vim.keymap.set({"n", "v"}, "<leader>gR", ":DiffviewClose<CR>")
