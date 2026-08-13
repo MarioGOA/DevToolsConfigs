@@ -190,6 +190,14 @@ automatically-unhide-macos-hidden-apps = false
     9 = 'secondary'
 
 [[on-window-detected]]
+    if.app-id = 'com.apple.finder'
+    run = 'move-node-to-workspace 1'
+
+[[on-window-detected]]
+    if.app-id = 'us.zoom.xos'
+    run = 'move-node-to-workspace 1'
+
+[[on-window-detected]]
     if.window-title-regex-substring = 'Amazon Chime'
     run = 'move-node-to-workspace 1'
 
