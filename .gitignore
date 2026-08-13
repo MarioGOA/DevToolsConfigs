@@ -1,5 +1,6 @@
 ## Ignore files
-nvim/lua/waario/config/amz-lsp.lua
+**/amz-lsp.lua
 nvim/lazy-lock.json
 *.log
+**/.DS_Store
 
