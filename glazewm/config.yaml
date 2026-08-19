@@ -146,15 +146,15 @@ window_rules:
     match:
       - window_process: { regex: "[Dd]iscord" }
 
-  - commands: ["move --workspace 7"]
+  - commands: ["move --workspace 8"]
     match:
       - window_process: { regex: "LaunchBox" }
 
-  - commands: ["move --workspace 8"]
+  - commands: ["move --workspace 7"]
     match:
       - window_process: { regex: "[Oo]bsidian" }
 
-  - commands: ["move --workspace 9"]
+  - commands: ["move --workspace 1"]
     match:
       - window_process: { regex: "Terminal" }
 
