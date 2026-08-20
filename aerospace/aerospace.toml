@@ -181,41 +181,41 @@ automatically-unhide-macos-hidden-apps = false
 #    6 = ['secondary', 'dell']        # You can specify multiple patterns.
 #                                     #   The first matching pattern will be used
 [workspace-to-monitor-force-assignment]
-    1 = 'built-in'
-    2 = 'built-in'
-    3 = 'built-in'
-    4 = 'built-in'
+    1 = 'main'
+    2 = 'main'
+    3 = 'main'
+    4 = 'main'
     7 = 'secondary'
     8 = 'secondary'
     9 = 'secondary'
 
 [[on-window-detected]]
     if.app-id = 'com.apple.finder'
-    run = 'move-node-to-workspace 1'
+    run = 'move-node-to-workspace 9'
 
 [[on-window-detected]]
     if.app-id = 'us.zoom.xos'
-    run = 'move-node-to-workspace 1'
+    run = 'move-node-to-workspace 9'
 
 [[on-window-detected]]
     if.window-title-regex-substring = 'Amazon Chime'
-    run = 'move-node-to-workspace 1'
+    run = 'move-node-to-workspace 9'
 
 [[on-window-detected]]
     if.app-id = 'com.apple.reminders'
-    run = 'move-node-to-workspace 1'
+    run = 'move-node-to-workspace 9'
 
 [[on-window-detected]]
     if.app-id = 'com.apple.iCal'
-    run = 'move-node-to-workspace 1'
+    run = 'move-node-to-workspace 9'
 
 [[on-window-detected]]
     if.app-name-regex-substring = 'zoom'
-    run = 'move-node-to-workspace 1'
+    run = 'move-node-to-workspace 9'
 
 [[on-window-detected]]
     if.app-id = 'com.cisco.secureclient.gui'
-    run = ['layout floating', 'move-node-to-workspace 1']
+    run = ['layout floating', 'move-node-to-workspace 9']
 
 [[on-window-detected]]
     if.app-id = 'org.mozilla.firefox'
@@ -231,10 +231,10 @@ automatically-unhide-macos-hidden-apps = false
 
 [[on-window-detected]]
     if.app-id = 'md.obsidian'
-    run = 'move-node-to-workspace 8'
+    run = 'move-node-to-workspace 7'
 
 [[on-window-detected]]
     if.app-id = 'com.googlecode.iterm2'
-    run = 'move-node-to-workspace 9'
+    run = 'move-node-to-workspace 1'
 
 
