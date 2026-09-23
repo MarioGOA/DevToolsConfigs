@@ -1,0 +1,12 @@
+partial alphanumeric_keys
+xkb_symbols "us-intl-c" {
+    // US International Layout
+    include "us(intl)"
+
+    // AltGr + N becomes dead_tilde instead of ñ.
+    key<AB06> {
+        [ n, N, dead_tilde, dead_tilde]
+    };
+
+    name[Group1] = "US International + AltGr dead tilde";
+};

@@ -1,0 +1,9 @@
+[Unit]
+Description=Watch Apps directory for AppImage changes
+
+[Path]
+PathChanged=%h/Apps
+Unit=apps-sync/apps-sync.service
+
+[Install]
+WantedBy=default.target

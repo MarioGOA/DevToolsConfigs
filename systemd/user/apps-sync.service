@@ -1,0 +1,6 @@
+[Unit]
+Description=Syncronize AppImage applications in Apps with XDG desktop applications.
+
+[Service]
+Type=oneshot
+ExecStart=%h/.config/utils/appimage-desktop
